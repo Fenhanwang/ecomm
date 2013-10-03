@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Worst Buy© &middot; Mainpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+    <!--/.login.js -->
+<script type="text/javascript">
+function login(){
+  //username is longer than two characters
+  if(document.getElementById("name").value.length<=2){
+    alert("username must longer than two characters");
+    return;
+  }
+  if (document.getElementById("name").value.charAt(0)=="." ||        
+         document.getElementById("name").value.charAt(0)=="@"||       
+         document.getElementById("name").value.indexOf('@', 0) == -1 || 
+         document.getElementById("name").value.indexOf('.', 0) == -1 || 
+         document.getElementById("name").value.lastIndexOf("@")==document.getElementById("name").value.length-1 || 
+         document.getElementById("name").value.lastIndexOf(".")==document.getElementById("name").value.length-1)
+     {
+      alert("Error format! Please check");
+      document.getElementById("name").focus();
+      return false;
+      }
+  //username must be email address
+  if(document.getElementById("pwd").value.length==0)
+  {alert("password is blank!");
+    return;
+    }
+  //password is not blank
+  document.getElementById("loginBtn").style.display = "none";
+}
+</script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">Worst Buy©</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="Laptop.html">Laptop</a></li>
+              <li><a href="#Laptop&Tablets">Tablet</a></li>
+              <li><a href="#Smartphone">Smartphone</a></li>
+              <li><a href="audio.html">Audio</a></li>
+              <li><a href="#Accessories">Accessories</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">MyAccount<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form pull-right" action="checkLogin.php" method="post">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <div class="btn-group" open>
+              	<button class="btn">Sign in</button>                
+                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+  	            <li>
+  		          <a href="signup.html">Not a member? Sign up</a>
+  	            </li>
+                <!-- dropdown menu links -->
+                </ul>
+              </div>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div class="container">
+    <form class="navbar-search pull-right">
+    <input type="text" class="search-query" placeholder="Search">
+    </form>
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit"><img src = "img/iphone5s.png"></img>
+        <div class="textonpic"><h2>Unlocked iPhone 5S ONLY $549</h2>
+        <p>A chip with 64-bit architecture. A fingerprint identity sensor. A better, faster camera. And an operating system built specifically for 64-bit. Any one of these features in a smartphone would make it ahead of its time. All of these features in a smartphone make it an iPhone that’s definitely ahead of its time.</p>
+        <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+      </div></div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; THE GEORGE WASHINGTON UNIVERSITY</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
